@@ -178,7 +178,7 @@ end
 
 function Board:tileUnderMouse(mousex, mousey)
   --right now, we can be greedy. mouse presses won't happen often. let's just scroll through every tile in the grid,
-  --and see if the mouse was within its box. easy, right? why tf not? lets see the exact coordinate we draw the tiles at.
+  --and see if the mouse was within its box. easy, right? why not? lets see the exact coordinate we draw the tiles at.
   local function mouseWithinBox(box_x,box_y,width,height)
     if mousex >= box_x and mousex <= box_x + width then
       if mousey >= box_y and mousey < box_y + height then
